@@ -1,0 +1,70 @@
+==============================================
+🎉 INTELLIHACK 5.0 - REGISTRATION CONFIRMED! 🎉
+==============================================
+
+Hi {{to_name}},
+
+Thank you for registering for IntelliHack 5.0! 
+We're thrilled to have you join us for this exciting hackathon event.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📋 YOUR REGISTRATION DETAILS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Team Name:          {{team_name}}
+Registration Type:  {{registration_type}}
+Team Size:          {{team_size}} member(s)
+Registered On:      {{registration_date}}
+
+Team Members:       {{team_members}}
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📅 EVENT INFORMATION
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Event:      {{event_name}}
+Date:       {{event_date}}
+Location:   {{event_location}}
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🚀 WHAT'S NEXT?
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✓ Watch your inbox for event updates and schedule details
+✓ Join our Discord/Slack channel (link will be sent soon)
+✓ Start brainstorming ideas with your team
+✓ Review the event guidelines and judging criteria
+✓ Prepare your development environment
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📌 IMPORTANT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Please save this email for your records. You'll need your 
+registration details on the day of the event.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+If you have any questions or need assistance, feel free to 
+reach out to us at: ieee@ucsc.cmb.ac.lk
+
+Visit our website: https://ucsc-ieee-cs-web-task-2025.vercel.app/
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+We can't wait to see what you build! 💡✨
+
+Best regards,
+IEEE Computer Society — UCSC Student Branch Chapter
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CONNECT WITH US
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+LinkedIn: https://www.linkedin.com/company/ieee-computer-society-ucsc-student-branch-chapter/
+Facebook: https://www.facebook.com/IEEEUCSC
+Instagram: https://www.instagram.com/ieeeucsc/
+
+© 2025 IEEE Computer Society UCSC. All rights reserved.
+
+==============================================

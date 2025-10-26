@@ -6,6 +6,17 @@ This is a creative web concept developed for the **IEEE Computer Society UCSC We
 
 **Live Demo**: [https://ucsc-ieee-cs-web-task-2025.vercel.app/](https://ucsc-ieee-cs-web-task-2025.vercel.app/)
 
+### ✨ Key Highlight
+
+**Email Notification System**: This website features a fully integrated **EmailJS** email notification system. When users register for the hackathon (either as an individual or as part of a team), they automatically receive a professional confirmation email with:
+
+-   Registration details (team name, member names, registration type)
+-   Event information (date, time, venue)
+-   Next steps and important reminders
+-   Contact information and social links
+
+**Production Ready**: All EmailJS credentials have been configured as environment variables in Vercel for secure production deployment.
+
 ## ✨ Features
 
 This website includes the following sections and features:
@@ -28,9 +39,23 @@ This website includes the following sections and features:
     -   Team Member 1 designated as Team Leader
     -   Form validation for all fields
     -   Email validation
+    -   **Email Confirmation** - Automated confirmation emails via EmailJS
+    -   Local storage for registration data
+
+-   **Email Integration**
+
+    -   **Automated email notifications** via EmailJS integration
+    -   Professional HTML email templates with IntelliHack 5.0 branding
+    -   Confirmation emails sent automatically upon registration
+    -   Individual registrants receive email at their provided address
+    -   Team leaders (Team Member 1) receive email with full team details
+    -   Registration details and event information included in email
+    -   Emails include next steps, important reminders, and contact info
+    -   **Production configured**: EmailJS credentials securely added to Vercel environment variables
 
 -   **Theme System**
 
+    -   Dark mode as default theme
     -   Light and Dark mode toggle
     -   Theme-persistent throughout the site
     -   Adaptive logo display based on theme
@@ -58,8 +83,9 @@ This project is built with modern web technologies:
 -   **UI Components**: shadcn/ui
 -   **Icons**: Lucide React
 -   **Theme Management**: next-themes
+-   **Email Service**: EmailJS (with automated confirmation emails)
 -   **Animations**: CSS animations and Tailwind transitions
--   **Deployment**: Vercel
+-   **Deployment**: Vercel (with environment variables configured)
 
 ## 📁 Project Structure
 
@@ -114,13 +140,29 @@ cd ucsc-ieee-cs-web-task-2025
 npm install
 ```
 
-3. Start the development server:
+3. Set up EmailJS (Optional - for email notifications):
+
+```sh
+# Copy the example environment file
+cp .env.example .env
+
+# Edit .env and add your EmailJS credentials:
+# VITE_EMAILJS_SERVICE_ID=your_service_id
+# VITE_EMAILJS_TEMPLATE_ID=your_template_id
+# VITE_EMAILJS_PUBLIC_KEY=your_public_key
+```
+
+See [EMAILJS_SETUP.md](./EMAILJS_SETUP.md) for detailed EmailJS configuration instructions.
+
+**Note**: For the live production site, EmailJS environment variables have already been configured in Vercel, so email notifications work automatically on the deployed site.
+
+4. Start the development server:
 
 ```sh
 npm run dev
 ```
 
-4. Open your browser and navigate to:
+5. Open your browser and navigate to:
 
 ```
 http://localhost:5173
@@ -160,7 +202,6 @@ npm run preview
 -   Loading states and transitions
 -   Accessible design with proper ARIA labels
 
-
 ## 🎯 Evaluation Criteria Met
 
 ✅ **Creativity & Uniqueness**
@@ -179,18 +220,52 @@ npm run preview
 ✅ **Concept Execution**
 
 -   Fully functional website with all major sections
+-   Complete registration workflow with email notifications
 -   Interactive FAQ and timeline
 -   Responsive across all devices
+-   Production-ready deployment
 
 ## 🌟 Unique Features
 
 1. **Particle Background** - Custom animated particle system for visual appeal
 2. **Dynamic Registration** - Smart form that adapts based on registration type
-3. **Social Sidebar** - Collapsible social media sidebar with smooth animations
-4. **Theme-Adaptive Logos** - Different logos for light and dark themes
-5. **Form Validation** - Comprehensive validation with user-friendly error messages
+3. **Email Notifications** - Automated confirmation emails via EmailJS integration
+    - Professional HTML email templates with event branding
+    - Automatic email delivery upon successful registration
+    - Team leaders receive consolidated team information
+    - Environment variables configured in Vercel for production use
+4. **Social Sidebar** - Collapsible social media sidebar with smooth animations
+5. **Theme-Adaptive Logos** - Different logos for light and dark themes
+6. **Form Validation** - Comprehensive validation with user-friendly error messages
+7. **Local Storage** - Persistent registration data storage
 
-## 👨‍💻 Developer
+## � Deployment
+
+This project is deployed on **Vercel** with full production configuration.
+
+### Environment Variables
+
+The following environment variables have been configured in Vercel for email functionality:
+
+-   `VITE_EMAILJS_SERVICE_ID` - EmailJS service identifier
+-   `VITE_EMAILJS_TEMPLATE_ID` - Email template identifier
+-   `VITE_EMAILJS_PUBLIC_KEY` - EmailJS public API key
+
+These variables enable the automated email notification system to work seamlessly in production. When users register for the hackathon through the live site, they receive immediate confirmation emails.
+
+### Deploying Your Own Instance
+
+If you want to deploy your own instance:
+
+1. Fork this repository
+2. Create an account on [Vercel](https://vercel.com)
+3. Import your forked repository
+4. Add the three EmailJS environment variables in Vercel project settings
+5. Deploy!
+
+For detailed EmailJS setup instructions, see [EMAILJS_SETUP.md](./EMAILJS_SETUP.md).
+
+## �👨‍💻 Developer
 
 **Dulina Gunasinghe**
 
@@ -199,6 +274,5 @@ npm run preview
 ## 📄 License
 
 This project was created as part of the IEEE Computer Society UCSC Web Team Recruitment Task.
-
 
 ---

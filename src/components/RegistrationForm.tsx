@@ -1,10 +1,11 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card } from "@/components/ui/card";
 import { toast } from "sonner";
 import { CheckCircle2, Users, User } from "lucide-react";
+import { initEmailJS, sendRegistrationEmail } from "@/lib/emailService";
 
 type RegistrationType = "individual" | "team";
 
@@ -32,6 +33,12 @@ const RegistrationForm = () => {
         role: "",
     });
     const [isSubmitted, setIsSubmitted] = useState(false);
+    const [isSendingEmail, setIsSendingEmail] = useState(false);
+
+    // Initialize EmailJS on component mount
+    useEffect(() => {
+        initEmailJS();
+    }, []);
 
     const handleTeamSizeChange = (newSize: number) => {
         // Enforce maximum of 4 members
@@ -120,6 +127,16 @@ const RegistrationForm = () => {
                 "intellihack_registrations",
                 JSON.stringify(registrations)
             );
+
+            // Send confirmation email
+            sendConfirmationEmail(
+                individualData.email,
+                individualData.name,
+                individualTeamName,
+                "individual",
+                1,
+                individualData.name
+            );
         } else {
             // Validate team registration
             if (!teamName.trim()) {
@@ -176,12 +193,62 @@ const RegistrationForm = () => {
                 "intellihack_registrations",
                 JSON.stringify(registrations)
             );
+
+            // Send confirmation email to team leader (first member)
+            const teamLeader = teamMembers[0];
+            const memberNames = teamMembers.map((m) => m.name).join(", ");
+
+            sendConfirmationEmail(
+                teamLeader.email,
+                teamLeader.name,
+                teamName,
+                "team",
+                teamSize,
+                memberNames
+            );
         }
 
         setIsSubmitted(true);
         toast.success(
             "Registration successful! Check your email for confirmation."
         );
+    };
+
+    const sendConfirmationEmail = async (
+        email: string,
+        name: string,
+        teamName: string,
+        type: "individual" | "team",
+        size: number,
+        memberNames: string
+    ) => {
+        setIsSendingEmail(true);
+
+        try {
+            const emailSent = await sendRegistrationEmail({
+                to_email: email,
+                to_name: name,
+                team_name: teamName,
+                registration_type: type,
+                team_size: size,
+                team_members: memberNames,
+                event_name: "IntelliHack 5.0",
+                event_date: "December 19–21, 2025",
+                event_location: "UCSC, Colombo",
+            });
+
+            if (emailSent) {
+                console.log("Confirmation email sent successfully");
+            } else {
+                console.warn(
+                    "Failed to send confirmation email, but registration was saved"
+                );
+            }
+        } catch (error) {
+            console.error("Error sending confirmation email:", error);
+        } finally {
+            setIsSendingEmail(false);
+        }
     };
 
     if (isSubmitted) {
@@ -538,8 +605,11 @@ const RegistrationForm = () => {
                             type="submit"
                             size="lg"
                             className="w-full shadow-glow"
+                            disabled={isSendingEmail}
                         >
-                            Complete Registration
+                            {isSendingEmail
+                                ? "Sending..."
+                                : "Complete Registration"}
                         </Button>
                     </form>
                 </Card>
