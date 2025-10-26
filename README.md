@@ -116,8 +116,8 @@ intellihack-spark/
 1. Clone the repository:
 
 ```sh
-git clone https://github.com/dulina2004/ucsc-ieee-cs-web-task.git
-cd ucsc-ieee-cs-web-task
+git clone https://github.com/dulina2004/ucsc-ieee-cs-web-task-2025.git
+cd ucsc-ieee-cs-web-task-2025
 ```
 
 2. Install dependencies:
