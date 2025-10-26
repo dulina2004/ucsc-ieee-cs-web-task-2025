@@ -24,7 +24,7 @@ This is a creative web concept developed for the **IEEE Computer Society UCSC We
 -   Secure webhook implementation with no credentials in frontend
 -   Perfect for event organizers to track and manage participants
 
-![alt text](image-1.png)
+![alt text](image-2.png)
 
 **Production Ready**: All EmailJS and Google Sheets credentials have been configured as environment variables in Vercel for secure production deployment.
 
