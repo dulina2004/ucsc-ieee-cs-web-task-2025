@@ -31,7 +31,7 @@ const Footer = () => {
                                 <Mail size={20} />
                             </a>
                             <a
-                                href="https://www.linkedin.com/company/ieee-computer-society-ucsc-student-branch-chapter/"
+                                href="https://www.linkedin.com/company/ieee-computer-society-student-branch-chapter-of-ucsc/posts/?feedView=all"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors"
@@ -49,7 +49,7 @@ const Footer = () => {
                                 <Instagram size={20} />
                             </a>
                             <a
-                                href="https://www.facebook.com/ieeeucsc"
+                                href="https://www.facebook.com/IEEECSUCSC/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors"

@@ -10,13 +10,13 @@ import {
 const socialLinks = [
     {
         name: "LinkedIn",
-        href: "https://www.linkedin.com/company/ieee-ucsc",
+        href: "https://www.linkedin.com/company/ieee-computer-society-student-branch-chapter-of-ucsc/posts/?feedView=all",
         icon: Linkedin,
         color: "hover:text-[#0A66C2]",
     },
     {
         name: "Facebook",
-        href: "https://www.facebook.com/ieeeucsc",
+        href: "https://www.facebook.com/IEEECSUCSC/",
         icon: Facebook,
         color: "hover:text-[#1877F2]",
     },

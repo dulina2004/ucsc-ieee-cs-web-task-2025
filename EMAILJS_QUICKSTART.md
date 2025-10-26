@@ -166,4 +166,3 @@ For production, consider:
 
 ---
 
-Need help? Check the detailed guide in `EMAILJS_SETUP.md` or open an issue!

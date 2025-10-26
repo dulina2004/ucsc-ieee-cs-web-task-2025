@@ -304,14 +304,14 @@ Use this HTML template in your EmailJS dashboard for the registration confirmati
                 <!-- Social Links -->
                 <div style="margin: 20px 0;">
                     <a
-                        href="https://www.linkedin.com/company/ieee-computer-society-ucsc-student-branch-chapter/"
+                        href="https://www.linkedin.com/company/ieee-computer-society-student-branch-chapter-of-ucsc/posts/?feedView=all"
                         style="display: inline-block; margin: 0 8px; color: #60a5fa; text-decoration: none; font-size: 14px;"
                     >
                         LinkedIn
                     </a>
                     <span style="color: #4b5563;">|</span>
                     <a
-                        href="https://www.facebook.com/IEEEUCSC"
+                        href="https://www.facebook.com/IEEECSUCSC/"
                         style="display: inline-block; margin: 0 8px; color: #60a5fa; text-decoration: none; font-size: 14px;"
                     >
                         Facebook

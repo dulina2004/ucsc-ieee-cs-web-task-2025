@@ -297,4 +297,3 @@ If you need help:
 
 ---
 
-Built with ❤️ for IntelliHack 5.0
