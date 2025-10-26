@@ -6,15 +6,6 @@ This is a creative web concept developed for the **IEEE Computer Society UCSC We
 
 **Live Demo**: [https://ucsc-ieee-cs-web-task-2025.vercel.app/](https://ucsc-ieee-cs-web-task-2025.vercel.app/)
 
-## 📋 Task Description
-
-The task was to design and build a website for an upcoming hackathon event with the following requirements:
-
--   Create at least 2-3 well-designed sections (hero, about, timeline, registration, sponsors, etc.)
--   Focus on creativity, layout, and visual presentation
--   Use original design ideas (no AI-generated templates)
--   Add animations or interactions to enhance user experience
-
 ## ✨ Features
 
 This website includes the following sections and features:
@@ -25,7 +16,6 @@ This website includes the following sections and features:
 -   **About Section** - Information about IntelliHack 5.0 and its theme
 -   **Timeline Section** - Event schedule with interactive timeline cards
 -   **Registration Form** - Dynamic form with individual and team registration options
--   **Sponsors Section** - Showcase of host organizations with theme-adaptive logos
 -   **FAQ Section** - Comprehensive accordion-style frequently asked questions
 -   **Footer** - Contact information and social media links
 
@@ -38,7 +28,6 @@ This website includes the following sections and features:
     -   Team Member 1 designated as Team Leader
     -   Form validation for all fields
     -   Email validation
-    -   Local storage for registration data
 
 -   **Theme System**
 
@@ -56,7 +45,6 @@ This website includes the following sections and features:
 
 -   **Responsive Design**
 
-    -   Mobile-first approach
     -   Fully responsive across all devices
     -   Adaptive layouts for tablet and desktop views
 
@@ -214,5 +202,3 @@ This project was created as part of the IEEE Computer Society UCSC Web Team Recr
 
 
 ---
-
-_Built with ❤️ for IEEE Computer Society UCSC Web Team Recruitment_
