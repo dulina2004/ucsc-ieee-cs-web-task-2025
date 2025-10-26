@@ -14,7 +14,7 @@ This is a creative web concept developed for the **IEEE Computer Society UCSC We
 -   Event information (date, time, venue)
 -   Next steps and important reminders
 -   Contact information and social links
-
+![alt text](image.png)
 **Production Ready**: All EmailJS credentials have been configured as environment variables in Vercel for secure production deployment.
 
 ## ✨ Features
