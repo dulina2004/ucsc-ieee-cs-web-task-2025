@@ -172,11 +172,6 @@ npm run preview
 -   Loading states and transitions
 -   Accessible design with proper ARIA labels
 
-## 📱 Responsive Breakpoints
-
--   Mobile: < 768px
--   Tablet: 768px - 1024px
--   Desktop: > 1024px
 
 ## 🎯 Evaluation Criteria Met
 
@@ -196,10 +191,8 @@ npm run preview
 ✅ **Concept Execution**
 
 -   Fully functional website with all major sections
--   Complete registration workflow
 -   Interactive FAQ and timeline
 -   Responsive across all devices
--   Production-ready deployment
 
 ## 🌟 Unique Features
 
@@ -208,11 +201,10 @@ npm run preview
 3. **Social Sidebar** - Collapsible social media sidebar with smooth animations
 4. **Theme-Adaptive Logos** - Different logos for light and dark themes
 5. **Form Validation** - Comprehensive validation with user-friendly error messages
-6. **Local Storage** - Persistent registration data storage
 
 ## 👨‍💻 Developer
 
-**Dulina Ranasinghe**
+**Dulina Gunasinghe**
 
 -   GitHub: [@dulina2004](https://github.com/dulina2004)
 
@@ -220,23 +212,6 @@ npm run preview
 
 This project was created as part of the IEEE Computer Society UCSC Web Team Recruitment Task.
 
-## 🙏 Acknowledgments
-
--   IEEE Computer Society — UCSC Student Branch Chapter
--   Previous IntelliHack website for design inspiration
--   shadcn/ui for the component library
--   Lucide React for the icon set
-
----
-
-**Note**: This website was built from scratch without using AI-generated templates, focusing on original design ideas and creative implementation. The project demonstrates proficiency in modern web development, UI/UX design, and full-stack thinking.
-
-## 📞 Contact
-
-For any queries regarding this project:
-
--   Email: ieee@ucsc.cmb.ac.lk
--   LinkedIn: [IEEE Computer Society UCSC](https://www.linkedin.com/company/ieee-computer-society-ucsc-student-branch-chapter/)
 
 ---
 
