@@ -6,16 +6,27 @@ This is a creative web concept developed for the **IEEE Computer Society UCSC We
 
 **Live Demo**: [https://ucsc-ieee-cs-web-task-2025.vercel.app/](https://ucsc-ieee-cs-web-task-2025.vercel.app/)
 
-### ✨ Key Highlight
+### ✨ Key Highlights
 
-**Email Notification System**: This website features a fully integrated **EmailJS** email notification system. When users register for the hackathon (either as an individual or as part of a team), they automatically receive a professional confirmation email with:
+**1. Email Notification System**: This website features a fully integrated **EmailJS** email notification system. When users register for the hackathon (either as an individual or as part of a team), they automatically receive a professional confirmation email with:
 
 -   Registration details (team name, member names, registration type)
 -   Event information (date, time, venue)
 -   Next steps and important reminders
 -   Contact information and social links
-![alt text](image.png)
-**Production Ready**: All EmailJS credentials have been configured as environment variables in Vercel for secure production deployment.
+    ![alt text](image.png)
+
+**2. Google Sheets Integration**: All registration data is automatically saved to **Google Sheets** in real-time via Google Apps Script webhook, providing:
+
+-   Automatic data synchronization for every registration
+-   Separate organized sheets for individual and team registrations
+-   Easy access and management of all participant data
+-   Secure webhook implementation with no credentials in frontend
+-   Perfect for event organizers to track and manage participants
+
+![alt text](image-1.png)
+
+**Production Ready**: All EmailJS and Google Sheets credentials have been configured as environment variables in Vercel for secure production deployment.
 
 ## ✨ Features
 
@@ -53,6 +64,14 @@ This website includes the following sections and features:
     -   Emails include next steps, important reminders, and contact info
     -   **Production configured**: EmailJS credentials securely added to Vercel environment variables
 
+-   **Data Management**
+
+    -   **Google Sheets Integration** - All registration data automatically saved to Google Sheets
+    -   Separate sheets for individual and team registrations
+    -   Real-time data sync via Google Apps Script webhook
+    -   Easy access to registration data for event organizers
+    -   Local storage backup for offline functionality
+
 -   **Theme System**
 
     -   Dark mode as default theme
@@ -84,6 +103,7 @@ This project is built with modern web technologies:
 -   **Icons**: Lucide React
 -   **Theme Management**: next-themes
 -   **Email Service**: EmailJS (with automated confirmation emails)
+-   **Data Storage**: Google Sheets (via Google Apps Script webhook)
 -   **Animations**: CSS animations and Tailwind transitions
 -   **Deployment**: Vercel (with environment variables configured)
 
@@ -156,7 +176,16 @@ See [EMAILJS_SETUP.md](./EMAILJS_SETUP.md) for detailed EmailJS configuration in
 
 **Note**: For the live production site, EmailJS environment variables have already been configured in Vercel, so email notifications work automatically on the deployed site.
 
-4. Start the development server:
+4. Set up Google Sheets Integration (Optional - for data storage):
+
+```sh
+# Add your Google Apps Script webhook URL to .env:
+# VITE_GOOGLE_SHEETS_WEBHOOK_URL=your_webhook_url
+```
+
+See [GOOGLE_SHEETS_SETUP.md](./GOOGLE_SHEETS_SETUP.md) for detailed Google Sheets configuration instructions.
+
+5. Start the development server:
 
 ```sh
 npm run dev
@@ -234,24 +263,38 @@ npm run preview
     - Automatic email delivery upon successful registration
     - Team leaders receive consolidated team information
     - Environment variables configured in Vercel for production use
-4. **Social Sidebar** - Collapsible social media sidebar with smooth animations
-5. **Theme-Adaptive Logos** - Different logos for light and dark themes
-6. **Form Validation** - Comprehensive validation with user-friendly error messages
-7. **Local Storage** - Persistent registration data storage
+4. **Google Sheets Integration** - Automatic data management system
+    - All registrations saved to Google Sheets in real-time
+    - Separate sheets for individual and team registrations
+    - Easy data access and management for event organizers
+    - Secure webhook implementation via Google Apps Script
+5. **Social Sidebar** - Collapsible social media sidebar with smooth animations
+6. **Theme-Adaptive Logos** - Different logos for light and dark themes
+7. **Form Validation** - Comprehensive validation with user-friendly error messages
+8. **Local Storage** - Persistent registration data storage for offline backup
 
-## � Deployment
+## 📡 Deployment
 
 This project is deployed on **Vercel** with full production configuration.
 
 ### Environment Variables
 
-The following environment variables have been configured in Vercel for email functionality:
+The following environment variables have been configured in Vercel for full functionality:
+
+**EmailJS Configuration** (for email notifications):
 
 -   `VITE_EMAILJS_SERVICE_ID` - EmailJS service identifier
 -   `VITE_EMAILJS_TEMPLATE_ID` - Email template identifier
 -   `VITE_EMAILJS_PUBLIC_KEY` - EmailJS public API key
 
-These variables enable the automated email notification system to work seamlessly in production. When users register for the hackathon through the live site, they receive immediate confirmation emails.
+**Google Sheets Configuration** (for data storage):
+
+-   `VITE_GOOGLE_SHEETS_WEBHOOK_URL` - Google Apps Script webhook URL
+
+These variables enable:
+
+-   Automated email confirmation system for all registrations
+-   Real-time data sync to Google Sheets for event organizers
 
 ### Deploying Your Own Instance
 

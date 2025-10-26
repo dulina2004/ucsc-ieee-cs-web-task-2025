@@ -6,6 +6,10 @@ import { Card } from "@/components/ui/card";
 import { toast } from "sonner";
 import { CheckCircle2, Users, User } from "lucide-react";
 import { initEmailJS, sendRegistrationEmail } from "@/lib/emailService";
+import {
+    sendIndividualRegistration,
+    sendTeamRegistration,
+} from "@/lib/googleSheetsService";
 
 type RegistrationType = "individual" | "team";
 
@@ -128,6 +132,15 @@ const RegistrationForm = () => {
                 JSON.stringify(registrations)
             );
 
+            // Send to Google Sheets
+            sendIndividualRegistration(
+                individualTeamName,
+                individualData.name,
+                individualData.email,
+                individualData.institution,
+                individualData.role
+            );
+
             // Send confirmation email
             sendConfirmationEmail(
                 individualData.email,
@@ -193,6 +206,9 @@ const RegistrationForm = () => {
                 "intellihack_registrations",
                 JSON.stringify(registrations)
             );
+
+            // Send to Google Sheets
+            sendTeamRegistration(teamName, teamSize, teamMembers);
 
             // Send confirmation email to team leader (first member)
             const teamLeader = teamMembers[0];
