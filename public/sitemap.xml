@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+    <url>
+        <loc>https://ucsc-ieee-cs-web-task-2025.vercel.app/</loc>
+        <lastmod>2025-10-28</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+        <image:image>
+            <image:loc>https://storage.googleapis.com/gpt-engineer-file-uploads/J44q86bhhgTNVJhBINBIC8C3BP03/social-images/social-1761439623002-hackerthon_logo.png</image:loc>
+            <image:title>IntelliHack 5.0 - IEEE UCSC Hackathon Logo</image:title>
+            <image:caption>Official logo for IntelliHack 5.0, the premier AI hackathon by IEEE UCSC at University of Colombo</image:caption>
+        </image:image>
+    </url>
+</urlset>
