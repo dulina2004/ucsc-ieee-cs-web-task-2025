@@ -8,10 +8,12 @@ import SponsorGrid from "@/components/SponsorGrid";
 import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
 import { SocialSidebar } from "@/components/SocialSidebar";
+import SEO from "@/components/SEO";
 
 const Index = () => {
     return (
         <div className="relative min-h-screen">
+            <SEO />
             <ParticleBackground color="rgba(30,64,175,0.6)" count={100} />
             <SocialSidebar />
             <Header />

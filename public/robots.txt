@@ -1,3 +1,7 @@
+User-agent: *
+Allow: /
+
+# Specific bot rules
 User-agent: Googlebot
 Allow: /
 
@@ -10,5 +14,9 @@ Allow: /
 User-agent: facebookexternalhit
 Allow: /
 
-User-agent: *
-Allow: /
+# Sitemap location
+Sitemap: https://ucsc-ieee-cs-web-task-2025.vercel.app/sitemap.xml
+
+# Crawl-delay for polite crawling
+Crawl-delay: 1
+
