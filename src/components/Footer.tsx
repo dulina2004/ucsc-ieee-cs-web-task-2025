@@ -83,6 +83,17 @@ const Footer = () => {
                         © 2025 IntelliHack 5.0. Hosted by IEEE Computer Society
                         — UCSC Student Branch Chapter.
                     </p>
+                    <p className="text-white/60 text-sm mt-2">
+                        Designed and developed by{' '}
+                        <a
+                            href="https://www.linkedin.com/in/dulina-gunasinghe/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="hover:text-white transition-colors underline"
+                        >
+                            Dulina Gunasinghe
+                        </a>
+                    </p>
                 </div>
             </div>
         </footer>

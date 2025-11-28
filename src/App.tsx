@@ -8,6 +8,7 @@ import { Analytics } from "@vercel/analytics/react";
 import { HelmetProvider } from "react-helmet-async";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
+import DisclaimerDialog from "@/components/DisclaimerDialog";
 
 const queryClient = new QueryClient();
 
@@ -20,6 +21,7 @@ const App = () => (
                 enableSystem={false}
             >
                 <TooltipProvider>
+                    <DisclaimerDialog />
                     <Toaster />
                     <Sonner />
                     <BrowserRouter>
